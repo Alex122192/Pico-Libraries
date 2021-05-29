@@ -2,7 +2,7 @@
 #include "pico/time.h"
 #include "Ultrasonic.h"
 
-
+//In this Constructor configure the pins to use for the Ultrasonic sensor 
 Ultrasonic::Ultrasonic(int Echo, int Trig){
     this->Echo = Echo;
     this->Trig = Trig;
@@ -14,6 +14,7 @@ Ultrasonic::Ultrasonic(int Echo, int Trig){
     gpio_put(Trig, 0);
 }
 
+//Function for medition of time for the echo pin
 void Ultrasonic::time_on(){
     int aux = 0;
     uint64_t t1,t2;
@@ -36,6 +37,7 @@ void Ultrasonic::time_on(){
     t = (float) (t1-t2) ;
 }
 
+//Calculate distance in cm
 float Ultrasonic::get_distance_cm(){
     float cm;
     time_on();
@@ -43,6 +45,7 @@ float Ultrasonic::get_distance_cm(){
     return cm;
 }
 
+//Calulate distance on IN
 float Ultrasonic::get_distance_in(){
     float in;
     time_on();
