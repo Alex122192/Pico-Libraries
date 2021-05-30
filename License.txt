@@ -1,0 +1,5 @@
+Licencia
+Alejandro Garcia Chavira 
+Cualquier persona que reciba una copia de este software queda libre de usarlo, modificarlo etc.
+
+El uso de este software es responabilidad de quien lo usa y no del creador y/o colaboradores ya que se crea con fines ya sea educativos, laborales o experimentales.
